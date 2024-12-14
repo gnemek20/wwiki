@@ -62,3 +62,9 @@
     border-radius: 5px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .templateContainer {
+    padding: 15px;
+  }
+}

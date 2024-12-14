@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
 }
 .pageBackground > img {
   filter: brightness(0.8);

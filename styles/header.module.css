@@ -1,4 +1,5 @@
 .headerBackground {
+  z-index: 149;
   position: sticky;
   top: 0;
   left: 0;

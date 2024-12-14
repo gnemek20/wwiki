@@ -29,7 +29,9 @@
 }
 .signInput > input {
   display: flex;
+  font-size: 16px;
   padding: 5px 10px;
+  width: 100%;
   outline: none;
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -58,6 +60,7 @@
 
 @media screen and (max-width: 768px) {
   .signContainer {
-    padding: 35px 25px;
+    padding: 45px 25px;
+    width: calc(100% - 100px);
   }
 }

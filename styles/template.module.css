@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .templateContainer {
+    padding: 15px;
+  }
+
   .profileContainer {
     max-width: 100%;
   }
