@@ -3,19 +3,11 @@ import { routerBack } from "@/functions/default";
 import styles from '@/styles/edit.module.css';
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 
 const Edit = (props: {
   target: InferGetServerSidePropsType<typeof getServerSideProps>
 }) => {
   const router = useRouter();
-
-  const [target, setTarget] = useState<string>('');
-  
-  useEffect(() => {
-    const target = props.target as any;
-    setTarget(target);
-  }, [props.target]);
 
   return (
     <>
@@ -23,7 +15,7 @@ const Edit = (props: {
       <div className={`${styles.templateContainer}`}>
         <div className={`${styles.topContainer}`}>
           <div className={`${styles.topTitle}`}>
-            <h1>{ target }</h1>
+            <h1>임시 제목</h1>
             <p>편집 페이지</p>
           </div>
           <div className={`${styles.topOption}`}>
@@ -54,14 +46,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     return {
       props: {
-        target: target ? target : null
+        targetJson: target ? target : null
       }
     }
   }
   catch (error) {
     return {
       props: {
-        target: null
+        targetJson: null
       }
     }
   }

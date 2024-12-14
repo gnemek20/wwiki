@@ -1,16 +1,9 @@
 import { Header, Template } from '@/components';
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next';
-import { useEffect, useState } from 'react';
 
 const Content = (props: {
   target: InferGetServerSidePropsType<typeof getServerSideProps>
 }) => {
-  const [target, setTarget] = useState<string>('');
-
-  useEffect(() => {
-    const target = props.target as any;
-    setTarget(target);
-  }, [props.target]);
 
   return (
     <>
@@ -26,14 +19,14 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     return {
       props: {
-        target: target ? target : null
+        targetJson: target ? target : null
       }
     }
   }
   catch (error) {
     return {
       props: {
-        target: null
+        targetJson: null
       }
     }
   }
