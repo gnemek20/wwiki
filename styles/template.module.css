@@ -1,0 +1,91 @@
+.templateContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 25px;
+  max-width: 1000px;
+}
+
+.topContainer {
+  display: flex;
+}
+
+.topTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.topTitle > p {
+  font-size: 14px;
+}
+
+.topOption {
+  margin-left: auto;
+  display: flex;
+}
+.editButton {
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+}
+.editButton > button {
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  transition: all 100ms;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+}
+.profileContainer {
+  max-width: 80%;
+  border: 2px solid #66d2ff;
+  border-collapse: collapse;
+}
+.profileContainer tr {
+  border: 1px solid #f5f5f5;
+}
+.profileContainer td {
+  padding: 5px 10px;
+}
+.profileContainer td:nth-child(1) {
+  text-align: center;
+}
+.profileContainer td:nth-child(2) {
+  font-size: 14px;
+}
+.profileContainer td > div {
+  display: flex;
+  margin: -6px -10px;
+}
+.profileContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.coloredBackground {
+  color: white;
+  background-color: #66d2ff;
+}
+
+@media (hover:hover) {
+  .editButton > button:hover {
+    opacity: 1;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .templateContainer {
+    padding: 10px;
+  }
+
+  .profileContainer {
+    max-width: 100%;
+  }
+}

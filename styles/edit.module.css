@@ -1,0 +1,64 @@
+.templateContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 25px;
+  max-width: 1000px;
+}
+
+.topContainer {
+  display: flex;
+}
+
+.topTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.topTitle > p {
+  font-size: 14px;
+}
+
+.topOption {
+  margin-left: auto;
+  display: flex;
+}
+.editButton {
+  display: flex;
+  align-items: flex-end;
+  white-space: nowrap;
+  gap: 15px;
+}
+.editButton > button {
+  opacity: 0.5;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  transition: all 100ms;
+}
+
+.editWrapper {
+  display: flex;
+}
+.editWrapper > textarea {
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  resize: vertical;
+}
+
+.bottomOption {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (hover:hover) {
+  .editButton > button:hover {
+    opacity: 1;
+    border-radius: 5px;
+  }
+}

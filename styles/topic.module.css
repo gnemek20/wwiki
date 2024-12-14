@@ -1,0 +1,38 @@
+.topicContainer {
+  transition: all 250ms;
+}
+.topicContainer > hr {
+  margin: 5px 0px 20px;
+  border: none;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.unToggledTopicContainer {
+  opacity: 0.3;
+}
+
+.topicTitle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.topicTitle img {
+  width: 25px;
+  height: auto;
+  transition: all 250ms;
+}
+.toggledArrow {
+  transform: rotate(90deg);
+}
+
+.topicContentContainer {
+  overflow: hidden;
+  transition: all 250ms;
+}
+.topicContentWrapper {
+  transition: all 250ms;
+}
+.topicContentWrapper > p {
+  white-space: pre-wrap;
+}
